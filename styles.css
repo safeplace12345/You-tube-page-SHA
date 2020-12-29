@@ -2,30 +2,149 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: aliceblue;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
 }
 .parent {
- 
+  max-width: 100vw;
 }
-div {
-  border: 2px solid red;
-}
-.div4{
-    display: flex;
-}
-.div2{
-    max-width: 20vw;
-}
-video{
-    width: 170px;
-}
-.div3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.buttons{
-    display: flex;
-flex-wrap: nowrap;
-justify-content: space-between;
 
+.div1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2px;
+  background-color: #212121;
+}
+.searchField {
+  border: 1px solid gray;
+  flex-grow: 2fr;
+  border-radius: 7px;
+  background-color: white;
+}
+.searchField > input {
+  width: 40vw;
+  border: none;
+  height: 20px;
+  border-radius: 7px;
+  color: #212121;
+}
+.searchField > input:focus {
+  outline: none;
+}
+.searchField > button {
+ position: relative;
+ left: -13px; 
+  border: none;
+  height: 20px;
+  background-color: white;
+}
+.searchField i{
+  color: #212121;
+  opacity: 0.4;
+}
+.searchField i:hover{
+  color: #212121;
+  opacity: 0.9;
+  cursor: text;
+}
+.searchField button{
+  outline: none;
+}
+.searchField:hover {
+  border: black 1px solid;
+}
+
+
+.div3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+  padding: 5px;
+  background-color: #212121;
+}
+.div4 {
+  background-color: slategrey;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 2px 0px;
+  border-bottom: 1px solid gray;
+}
+.buttons > button {
+  color:thistle;
+  border-radius: 15px;
+  padding: 2px 8px;
+  font-size: 0.5rem;
+  background-color: #212121;
+}
+.buttons > button:hover {
+  color:white;
+  background-color: #333;
+}
+
+video {
+  max-width: 182px;
+}
+nav > div {
+  display: inline-block;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 5px 0px;
+}
+.subs {
+  font-size: 0.7rem;
+}
+.fa-youtube {
+  margin-left: 8px;
+  color: red;
+}
+.mainLinks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
+  color: white;
+}
+
+figure{
+  padding: 5px 0px;
+  text-align: center;
+  
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+.div2 {
+  background-color: #212121;
+}
+.follow{
+  display: grid;
+  border-bottom: thistle 1px solid;
+  margin: 6px 0px;
+}
+
+.follow > i ,.mainLinks > i,.follow > span{
+  padding: 5px 5px;
+  color: grey;
+  text-align: center;
+  
+}
+.follow-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.follow span{
+  font-size: 0.6rem;
+}
+ i:hover,.follow >span:hover{
+  color: aliceblue;
 }
